@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--配置bean-->
+<beans>
+    <bean id = "userDao" class="com.example.dao.UserDaoImpl"/>
+
+    <bean id = "userService" class="com.example.service">
+        <!--property 标签是通过set方法进行注入的，
+        所以再使用该标签时要保证该标签所对应的属性有setter-->
+        <property name = "dao" ref="userDao"/>
+    </bean>
+
+</beans>

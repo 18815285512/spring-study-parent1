@@ -1,0 +1,12 @@
+package com.study.demo.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SessionTokenUtil {
+//
+//    @Autowired
+//    private HttpServlet
+
+}
